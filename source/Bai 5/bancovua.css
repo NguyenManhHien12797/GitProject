@@ -1,0 +1,39 @@
+.child1 {
+    background-color: #dddddd;
+    width: 80px;
+    height: 80px;
+}
+
+.child2 {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+#bg {
+    background-color: yellow;
+    width: 730px;
+    height: 740px;
+}
+
+.child {
+    width: 40px;
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.child3 {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#top {
+    background-color: deepskyblue;
+    color: white;
+    font-size: 25px;
+    width: 730px;
+    text-align: center;;
+}
