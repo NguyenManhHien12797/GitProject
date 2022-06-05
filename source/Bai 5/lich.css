@@ -1,0 +1,37 @@
+h1 {
+    color: deepskyblue;
+    position: relative;
+    left: 250px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 25px;
+}
+table {
+    width: 800px;
+    text-align: center;
+    font-size: 15px;
+    table-layout: fixed;
+    font-family: 'Press Start 2P', cursive;
+}
+.c {
+    padding: 15px;
+}
+table.b {
+    border-collapse: collapse;
+}
+.b tr td {
+    border: 5px ridge #dddddd;
+    padding: 15px;
+    border-collapse: collapse;
+}
+.one {
+    background-color: orange;
+    color: white;
+    padding: 15px;}
+.red {
+    background-color: red;
+    color: white;
+}
+.blue {
+    background-color: blue;
+    color: white;
+}
