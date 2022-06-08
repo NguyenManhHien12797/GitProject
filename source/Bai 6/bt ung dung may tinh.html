@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<table>
+    <tr>
+        <td><input id='inputNumber1' type="text"></td>
+        <td><input id="inputNumber2" type="text"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><button onclick="cong()" style="width: 150px">Addition(+)</button></td>
+        <td><button onclick="tru()" style="width: 150px">Subtraction(-)</button></td>
+        <td><button onclick="nhan()">Multiplication(X)</button></td>
+        <td><button onclick="chia()">Division(/)</button></td>
+    </tr>
+</table>
+<p id="result">Result Division:</p>
+<script>
+    function cong() {
+        let a =document.getElementById("inputNumber1").value
+        let b=document.getElementById("inputNumber2").value
+   let cong= Number(a) + Number(b)
+        document.getElementById("result").innerHTML = "Result Division:" + cong
+     }
+    function tru() {
+        let a =document.getElementById("inputNumber1").value
+        let b=document.getElementById("inputNumber2").value
+        let tru= Number(a) - Number(b)
+        document.getElementById("result").innerHTML = "Result Division:" + tru
+    }
+    function nhan() {
+        let a =document.getElementById("inputNumber1").value
+        let b=document.getElementById("inputNumber2").value
+        let nhan= Number(a) * Number(b)
+        document.getElementById("result").innerHTML = "Result Division:" + nhan
+    }
+    function chia() {
+        let a =document.getElementById("inputNumber1").value
+        let b=document.getElementById("inputNumber2").value
+        let chia= Number(a) / Number(b)
+        document.getElementById("result").innerHTML = "Result Division:" + chia
+    }
+</script>
+</body>
+</html>
