@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<button type="button" onclick="show();">Click Me!</button>
+
+<h2 id="a"></h2>
+
+
+<script>
+    // function showMessage(){
+    //     alert('Xin chào!');
+    // }
+    function showMessage(){
+        document.getElementById('messageDiv').innerHTML = 'ten may la:'+name;
+    }
+    function show(){
+        document.write('hello world!');
+    }
+    let name = prompt("Moi ban nhap vao ten");
+    // document.getElementById("a").innerText = name;
+
+</script>
+</body>
+</html>
