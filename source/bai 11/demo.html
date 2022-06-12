@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="number" oninput="tinh()">
+<input id="b" type="number" oninput="tinh()">
+<p id="tong" ></p>
+<script>
+    function tinh() {
+        if (a != " " || b != " ") {
+            let tong = a + b;
+            document.getElementById("tong").innerHTML = "tổng là:" + tong
+        }
+    }
+</script>
+</body>
+</html>
