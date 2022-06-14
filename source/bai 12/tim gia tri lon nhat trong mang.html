@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sophantu=prompt("Nhập vào số phần tử của mảng")
+    let arr= new Array()
+    let max=""
+    for(let i=0;i<sophantu;i++){
+        let giatri=Number(prompt("Nhập vào các giá trị thứ "+i+" của mảng"));
+      arr[i]=giatri
+         max=arr[0]
+        if(giatri>=max){
+            max=giatri;
+        }
+    }
+    document.write("Mảng vừa nhập là: arr= ["+arr+" ]<br>")
+    document.write("Số lớn nhất trong mảng là: "+max)
+
+
+</script>
+</body>
+</html>
