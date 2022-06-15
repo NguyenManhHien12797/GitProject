@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 1
+    // let n=prompt("Nhập số phần tử của mảng")
+    // if (n<0){
+    //     alert("Mời nhập lại số phần tử của mảng lớn hơn 0")
+    // }else {
+    //     let count=0
+    //     let demSo= new Array()
+    //     for(let i=0; i<n; i++){
+    //         let giatri=parseInt(prompt("Nhập giá trị thứ "+i+" của phần tử trong mảng"))
+    //         demSo[i]=giatri
+    //         if(giatri>=10){
+    //             count+=1
+    //         }
+    //     }
+    //     document.write("Mảng vừa nhập là: demSo = [ "+demSo+" ]<br>")
+    //     document.write("Số nguyên dương lớn hơn 10 trong mảng là: "+count)
+    // }
+    // bài 2
+    // let demSo= new Array()
+    // let max=""
+    // let count=0
+    // while (true){
+    //     let giatri=parseInt(prompt("Nhập giá trị phần tử trong mảng (lưu ý không nhập trùng nhau)"))
+    //       if(demSo.indexOf(giatri)==-1){
+    //           demSo.push(giatri)
+    //           count++
+    //       else{
+    //           alert("Không đọc lưu ý à")
+    //       }
+    //           if(count==10){
+    //           break
+    //           }
+    // }
+    // for(i=0;i<demSo.length;i++){
+    //     max=demSo[0]
+    //     if(demSo[i]>=max){
+    //         max=demSo[i]
+    //     }
+    // }
+    // document.write("Mảng vừa nhập là: demSo = [ "+demSo+" ]<br>")
+    // document.write("Số nguyên lớn nhất trong mảng là: "+max)
+    // bài 3
+    // let n = prompt("Nhập số phần tử của mảng")
+    // if(n<0){
+    //     alert("Mời nhập lại phần tử của mảng")
+    // }else {
+
+    // let demSo = new Array()
+    // let max = ""
+    // let sum=0
+    // for (let i = 0; i < n; i++) {
+    //     let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //     demSo[i] = giatri
+    //     sum+=giatri
+    //     max = demSo[0]
+    //     if (demSo[i] >= max) {
+    //         max = demSo[i]
+    //     }
+    // }
+    // let avg=sum/n
+    // document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    // document.write("Số nguyên lớn nhất trong mảng là: " + max)
+    // document.write("Trung bình các phần tử trong mảng là: " + avg)
+    // }
+    // bài 4
+    // let n = prompt("Nhập số phần tử của mảng")
+    // if (n < 0) {
+    //     alert("Mời nhập lại phần tử của mảng")
+    // } else {
+    //     let demSo = new Array()
+    //     for (let i = 0; i < n; i++) {
+    //         let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //         demSo[i] = giatri
+    //     }
+    //     document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    //     demSo.reverse()
+    //     document.write("Mảng vừa đảo ngược là: demSo = [ " + demSo + " ]<br>")
+    //
+    // }
+    // bài 5
+
+    // let n = prompt("Nhập số phần tử của mảng")
+    // let count=0
+    // if (n < 0) {
+    //     alert("Mời nhập lại phần tử của mảng")
+    // } else {
+    //     let demSo = new Array()
+    //     for (let i = 0; i < n; i++) {
+    //         let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //         demSo[i] = giatri
+    //         if(giatri<0){
+    //             count+=1
+    //         }
+    //     }
+    //     document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    //     document.write("Số lượng số nguyên âm trong mảng là: "+count + "<br>")
+    //
+    // }
+
+    // bài 6
+    // let demSo = new Array()
+    // let kiemtra=parseInt(prompt("Nhập vào phần tử cần kiểm tra"))
+    //     for (let i = 0; i < 10; i++) {
+    //         let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //         demSo[i] = giatri
+    //         }
+    //         document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    //
+    // if(demSo.indexOf(kiemtra)==-1){
+    //     document.write(kiemtra+" is not in the array")
+    // }else{
+    //     // alert(kiemtra+" is in the array"+"<br> Vị trí: "+demSo.indexOf(kiemtra))
+    //     document.write(kiemtra+" is in the array <br> Vị trí đầu tiên của phần tử cần kiểm tra là: "+demSo.indexOf(kiemtra))
+    // }
+
+    // bài 7
+
+    // let demSo = new Array()
+    // let index = 0
+    // for (let i = 0; i < 10; i++) {
+    //     let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //     demSo[i] = giatri
+    // }
+    // document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    // let v =parseInt( prompt("Nhập số nguyên cần kiểm tra:"))
+    // document.write("Số nguyên cần kiểm tra là: "+v+"<br>")
+    // if (demSo.indexOf(v) == -1) {
+    //     document.write(v+" không có trong mảng <br>")
+    //     demSo.push(v)
+    //     document.write("Mảng mới khi thêm "+v+" là: new = [ " + demSo + " ]<br>")
+    // } else {
+    //     document.write(v+" có trong mảng <br>")
+    //    demSo.splice(demSo.indexOf(v),1)
+    //     document.write("Mảng mới khi xóa "+v+" là: new = [ " + demSo + " ]<br>")
+    // }
+    //
+    // bài 8
+
+    // let demSo = new Array()
+    // let index = 0
+    // for (let i = 0; i < 10; i++) {
+    //     let giatri = parseInt(prompt("Nhập giá trị thứ " + i + " của phần tử trong mảng"))
+    //     demSo[i] = giatri
+    // }
+    // document.write("Mảng vừa nhập là: demSo = [ " + demSo + " ]<br>")
+    // demSo.sort((a,b)=>b-a)
+    // document.write("Mảng đã sắp xếp là: demSo = [ " + demSo + " ]<br>")
+    //
+    // bài 9
+    let mang1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let mang2 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    let c = []
+    c = mang1.concat(mang2)
+    document.write("Mảng đã nối là: c = [" + c + " ]")
+</script>
+</body>
+</html>
