@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1> Caro Game Simple</h1>-->
+<!--<div id="result" ></div>-->
+
+<h3>Caro Game Simple</h3>
+<p id="carogame" ></P>
+<input type="button" value="Change Value" onclick="changeValue()">
+
+<script>
+    let b = document.getElementById("carogame");
+
+    let board = [];
+    let data = "";
+    for (let i = 0; i < 5; i++) {
+        board[i] = new Array(0, 0, 0, 0, 0);
+    }
+
+    for (let i = 0; i < 5; i++) {
+        data += "<br/>";
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;";
+        }
+    }
+
+    data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    b.innerHTML = data;
+
+    function changeValue() {
+        let positionX = prompt("X: ");
+        let positionY = prompt("Y: ");
+        data = "";
+        board[positionX][positionY] = "x";
+        for (let i = 0; i < 5; i++) {
+            data += "<br/>";
+            for (let j = 0; j < 5; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+            }
+        }
+        data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+        b.innerHTML = "<hr/>" + data;
+    }
+
+ // let n=prompt("Nhập vào N dòng")
+ // let m=prompt("Nhập vào M cột")
+//  let gamecaro= new Array()
+//  for(let i=0; i<n;i++){
+//      gamecaro[i]=new Array()
+//      for(let j=0; j<m;j++){
+//         gamecaro[i][j]=0
+//      }
+//      document.getElementById("result").innerHTML=gamecaro
+//  }
+// var numbers = [];
+//
+// // Lặp theo hàng
+// for (var i = 0; i < n; i++){
+//     numbers[i] = [];
+//     // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
+//     for (var j = 0; j < m; j++){
+//         numbers[i][j] = Math.floor((Math.random() * 10) + 1);
+//         // numbers[i][j] = 0;
+//     }
+// }
+// document.write(numbers + "<br>")
+// console.log(numbers);
+
+//
+
+</script>
+</body>
+</html>
