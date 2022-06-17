@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 1
+    // function tinhBinhPhuong(n){
+    //     binhPhuong=n*n
+    //     return binhPhuong
+    // }
+    // let number=prompt("Nhập vào số bất kỳ")
+    // if(number<0){
+    //     alert("Nhập lại số >0")
+    // } else{
+    //     alert("Bình phương của "+number+" là: "+tinhBinhPhuong(number))
+    // }
+    // bài 2
+    // function tinhDtCv(r) {
+    //     dt = 3.14 * r * r;
+    //     cv = 2 * 3.14 * r;
+    //     return [dt, cv]
+    // }
+    // let r = prompt("Nhập vào bán kính")
+    // let kq = tinhDtCv(r)
+    // alert("Diện tích hình tròn là: "+kq[0] +"; Chu vi hình tròn là" + kq[1])
+    // bài 3
+    //     function tinhGiaiThua(n){
+    //         let giaiThua=1;
+    //         for(let i=1;i<=n;i++){
+    //             giaiThua=giaiThua*i;
+    //         }
+    //         return giaiThua
+    //     }
+    // let number=prompt("Nhập vào số cần tính giai thừa")
+    //     console.log(tinhGiaiThua(number))
+    //     bài 4
+    // function isNumber(num){
+    //     num=prompt("Nhập vào 1 ký tự:")
+    //     if(!isNaN(num)) return true
+    //     else return false
+    // }
+    //     console.log(isNumber())
+    //     bài 5
+   // function timMin(a,b,c){
+   //     if(a<b&&a<c){
+   //         min=a
+   //     }else {
+   //         if(b<c){
+   //             min=b}
+   //             else min=c
+   //         }
+   //     return min
+   // }
+   //
+   //  console.log(timMin(1,-11,-1))
+   // bài 6
+   //  function isPositiveIntegers(num){
+   //      num=prompt("Nhập vào 1 ký tự:")
+   //      if(!isNaN(num)){
+   //          if(num>0) return true
+   //          else return false
+   //      }
+   //      else return false
+   //  }
+    // console.log(isPositiveIntegers())
+    // bài 7
+    // function swap(a, b) {
+    //     num1 = b
+    //     num2 = a
+    // }
+    //
+    // let num1 = 11
+    // let num2 = 20
+    // swap(num1, num2)
+    // console.log(num1 + " ; " + num2)
+    // bài 8
+    // function swap(arr) {
+    //     let temp = arr[0]
+    //     arr[0] = arr[1]
+    //     arr[1] = temp
+    // }
+    // let array = [10, 20]
+    // swap(array)
+    // console.log(array)
+    // bài 9
+function kiemTra(array,kyTu) {
+    count = 0
+    index=-1
+    for (i = 0; i < array.length; i++) {
+        if (array[i] == kyTu) {
+            count++
+        }
+    }
+    if(count==0){
+        return -1
+    }else return count
+}
+
+let arr=[1,2,"c",3,"d","c"]
+    console.log(kiemTra(arr,"c"))
+</script>
+</body>
+</html>
