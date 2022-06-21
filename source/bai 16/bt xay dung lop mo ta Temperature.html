@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature{
+    c;
+    constructor(c) {
+      this.c= c;
+    }
+    convertF(){
+        return 9/5*this.c+32
+    }
+    convertK(){
+        return this.c + 273.15
+    }
+  }
+  let nhietDo= new Temperature(25)
+  alert("Độ F là: "+ nhietDo.convertF()+ ": Độ K là: "+ nhietDo.convertK())
+
+</script>
+</body>
+</html>
