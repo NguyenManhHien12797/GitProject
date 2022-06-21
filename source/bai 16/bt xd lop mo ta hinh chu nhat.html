@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hcn"></p>
+<canvas id="vehcn" width="1368px" height="768px" style="border:1px solid #d3d3d3"></canvas>
+<script>
+  class Rectangle {
+    width
+    height
+      constructor(width,height){
+        this.width= width
+          this.height= height
+      }
+      getArea(){
+        return this.width*this.height
+      }
+      getPerimeter(){
+        return (this.width+this.height)*2
+      }
+      createdRectangle(){
+        let ctx= document.getElementById("vehcn").getContext("2d");
+        ctx.fillStyle="#FF0000"
+          ctx.fillRect(0,0,this.width,this.height)
+      }
+  }
+  let hcn= new Rectangle(400,500)
+  hcn.createdRectangle()
+ document.getElementById("hcn").innerHTML="Diện tích là: "+hcn.getArea()+ "; Chu vi là: "+ hcn.getPerimeter()
+</script>
+</body>
+</html>
