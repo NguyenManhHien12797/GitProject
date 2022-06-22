@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="quanganh" placeholder="tn QA"><button onclick="sendMessForBinh()">Send</button>
+<p id="inboxQA"></p>
+<p id="sendQA"></p>
+<input id="binh" placeholder="tn Binh"><button onclick="sendMessForQA()">Send</button>
+<p id="inboxBinh"></p>
+<p id="sendBinh"></p>
+<script>
+    class Phone {
+        battery
+        draft
+        inbox
+        sent
+
+        constructor(battery, draft, inbox, sent) {
+            this.battery = battery;
+            this.draft = draft;
+            this.inbox = inbox;
+            this.sent = sent;
+        }
+        checkOnOff(){
+            // if (this.battery>0) return true
+            // else return  false;
+            return this.battery>0;
+        }
+
+        charge(){
+            this.battery=100;
+        }
+
+        typing(newMess){
+            this.draft = newMess;
+        }
+
+        send(newPhone){
+            //chuyển thư nháp vào hộp thư đến của điện thoại khác
+            newPhone.inbox.push(this.draft);
+            //chuyển thư nháp vào hôp thư đã gửi của chính đt này
+            this.sent.push(this.draft);
+            //giảm pin
+            this.battery--;
+            //xoá thư nháp
+            this.draft ="";
+        }
+    }
+
+    let quangAnh = new Phone(10, "", [], [])
+    let binh = new Phone(8, "", [], [])
+    function sendMessForBinh() {
+        // lay du lieu trong input
+        let mess = document.getElementById("quanganh").value;
+        // gan vao thu nhap cua QA
+        quangAnh.typing(mess);
+        // gui tin nhan cho Binh
+        quangAnh.send(binh);
+        // in thu da gui vao the p
+        document.getElementById("sendQA").innerText = quangAnh.sent;
+        document.getElementById("inboxBinh").innerText = binh.inbox;
+    }
+    function sendMessForQA() {
+        // lay du lieu trong input
+        let mess = document.getElementById("binh").value;
+        // gan vao thu nhap cua QA
+        binh.typing(mess);
+        // gui tin nhan cho Binh
+        binh.send(quangAnh);
+        // in thu da gui vao the p
+        document.getElementById("sendBinh").innerText = binh.sent;
+        document.getElementById("inboxQA").innerText = quangAnh.inbox;
+    }
+
+</script>
+</body>
+</html>
