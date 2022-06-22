@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Remote {
+    id
+
+    constructor(id) {
+      this.id = id;
+    }
+
+    changeChannel(tv, newChannel){
+      tv.changeChannel(newChannel);
+    }
+    changeVolume(tv, newVolume){
+      tv.changeVolume(newVolume);
+    }
+  }
+  class TV {
+    channel
+    volume
+    status
+
+    constructor(channel, volume, status) {
+      this.channel = channel;
+      this.volume = volume;
+      this.status = status;
+    }
+
+    changeChannel(newChannel){
+      this.channel = newChannel;
+    }
+    changeVolume(newVolume){
+      this.volume = newVolume;
+    }
+  }
+  let tv1 = new TV(0, 0, true);
+  let tv2 = new TV(0, 0, true);
+  let rm1 = new Remote(1);
+</script>
+
+</body>
+</html>
