@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//   Nhập vào mảng n phần từ
+// a. In ra mảng
+// b. in ra tổng các phần tử trong mảng
+let arr= new Array()
+let x=0
+let n=prompt("Nhập sô phần tử trong mảng n=")
+let sum=0
+for(;x<n;x++){
+    let value=prompt("Nhập giá trị thứ "+x+" của phần tử")
+    arr[x]=value
+    sum+=Number(value)
+}
+document.write("Phần 1: arr = [ "+arr+" ]<br>")
+document.write("Phần 2: Tổng các phần tử trong mảng là:"+ sum)
+</script>
+</body>
+</html>
